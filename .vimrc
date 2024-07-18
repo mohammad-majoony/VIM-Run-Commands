@@ -20,7 +20,7 @@ set hlsearch
 set ruler 
 set showcmd
 set wildmenu
-set scrolloff=5
+set scrolloff=10
 set incsearch
 set backup
 set bex=_BACKUP
@@ -30,6 +30,7 @@ set si
 set bg=light
 set laststatus=2
 set noshowmode
+set hidden
 
 "vim-plug 
 call plug#begin()
@@ -44,4 +45,10 @@ let g:UltiSnipsEditSplit="vertical"
 call plug#end()
 
 map <F1> <ESC> : nohls <CR>
+map <F2> gg y9999999999y
 map <leader>\ <ESC> : w <CR>
+
+map <C-h> <ESC> <C-w>h
+map <C-j> <ESC> <C-w>j
+map <C-k> <ESC> <C-w>k
+map <C-l> <ESC> <C-w>l
